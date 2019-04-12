@@ -35,9 +35,7 @@ namespace Диплом
             if (answer == "succesfull")
             {
                 MessageBox.Show("Регистрация прошла успешно, теперь вы можете войти");
-                
                 Close();
-            
             }
             else
             {

@@ -14,7 +14,7 @@
     </Window.Background>
     <Grid>
         <Image Margin="0,-36,619,253" Source="hqdefault.png"/>
-        <TextBlock x:Name="Hi" HorizontalAlignment="Left" Height="70" Margin="241,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic"><Run Text="Добро пожаловать в "/><Run Text="HELPDESK,"/></TextBlock>
+        <TextBlock x:Name="Hi" HorizontalAlignment="Left" Height="70" Margin="241,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold" FontStyle="Italic" Text="Добро пожаловать в HELPDESK,"/>
         <Button x:Name="Creat" Content="Сообщить о поломке" HorizontalAlignment="Left" Height="50" Margin="0,133,0,0" VerticalAlignment="Top" Width="173" Background="#FFADEAE4" FontFamily="Times New Roman" FontSize="18"/>
 
 

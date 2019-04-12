@@ -22,8 +22,7 @@ namespace Диплом
     /// </summary>
     public partial class MainWindow : Window
     {
-        public string L { get; set; }
-        public string P { get; set; }
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -41,21 +40,48 @@ namespace Диплом
             s.Login = Login.Text;
             s.Password = Password.Password;
             int status_cod = s.Authorization();
-            string _Name = s.Name;
-            string _Roly = s.Roly;
-            Sotr so = new Sotr();
-            so.Hi.Text = so.Hi.Text + _Name;
-            so.Show();
-            Hide();
+            if (status_cod == 1)
+            {
+                Login.BorderBrush = Brushes.Green;
+                Password.BorderBrush = Brushes.Green;
+                _Login(s.Name, s.Roly);
+            }
+            else
+            {
+                if (status_cod == 2)
+                {
+                    
+                    Login.BorderBrush = Brushes.Green;
+                    Password.BorderBrush = Brushes.IndianRed;
+                }
+                else
+                {
+                    Password.BorderBrush = Brushes.IndianRed;
+                    Login.BorderBrush = Brushes.IndianRed;
+                }
+            }
+        }
+        private void _Login(string Name_, string Roly_)
+        {
+            Sotr s = new Sotr();
+            switch(Roly_)
+            {
+                case "Сотрудник":
+                    s.Hi.Text = Name_;
+                    s.Name__ = Name_;
+                    s.Roly = Roly_;
+                    s.Show();
+                    break;
+                //case "Техник":
+                //    //
+
+            }
         }
 
         private void Reister_Click(object sender, RoutedEventArgs e)
         {
             Registration r = new Registration(this);
             r.Show();
-            
-            
-            
         }
     }
 }

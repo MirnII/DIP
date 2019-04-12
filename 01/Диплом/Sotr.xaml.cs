@@ -19,6 +19,8 @@ namespace Диплом
     /// </summary>
     public partial class Sotr : Window
     {
+        public string Name__ { get; set; }
+        public string Roly { get; set; }
         public Sotr()
         {
             InitializeComponent();

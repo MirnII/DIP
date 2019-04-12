@@ -40,9 +40,18 @@ namespace Диплом
                 }
                 else
                 {
-                    status_cod = 1111;
+                    if (Login == reader["Логин"].ToString())
+                    {
+                        status_cod = 2;
+                        break;
+                    }
+                    else
+                    {
+                        status_cod = 3;
+                    }
                 }
             }
+            reader.Close();
             return status_cod;
         }
         
@@ -59,21 +68,12 @@ namespace Диплом
             if(number == 1)
             {
                 answer =  "succesfull";
-                
             }
             else
             {
                 answer = "error";
             }
-            return answer;
-            
-        }
-
-        public void Register(string login, string password)
-        {
-            Login = login;
-            Password = password;   
-            
+            return answer;   
         }
     }
 }

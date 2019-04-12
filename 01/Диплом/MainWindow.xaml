@@ -13,9 +13,9 @@
         </LinearGradientBrush>
     </Window.Background>
     <Grid>
-        <Label Content="Документооборот ЗабГК " HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="291" Background="#FF189BF5" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold"/>
+        <Label Content="      HELPDESK ЗабГК " HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="291" Background="#FF189BF5" FontFamily="Times New Roman" FontSize="24" FontWeight="Bold"/>
         <Label Content="ЛОГИН:" HorizontalAlignment="Left" Height="26" Margin="10,58,0,0" VerticalAlignment="Top" Width="105" FontSize="14" FontFamily="Times New Roman"/>
-        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="26" Margin="77,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="#FFF3E7E7" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.5,0.5" TextChanged="Login_TextChanged">
+        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="26" Margin="77,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="201" Background="#FFF3E7E7" FontFamily="Times New Roman" FontSize="18" RenderTransformOrigin="0.5,0.5" TextChanged="Login_TextChanged" BorderThickness="2">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,7 +26,7 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Label Content="ПАРОЛЬ:" HorizontalAlignment="Left" Height="26" Margin="10,89,0,0" VerticalAlignment="Top" Width="105" FontSize="14" FontFamily="Times New Roman"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="26" Margin="77,89,0,0" VerticalAlignment="Top" Width="201" Background="#FFF3E7E7"/>
+        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="26" Margin="77,89,0,0" VerticalAlignment="Top" Width="201" Background="#FFF3E7E7" BorderThickness="2"/>
         <Image Margin="0,180,0,0" Source="hqdefault.png" Stretch="Fill"/>
         <Button x:Name="enter" Content="ВОЙТИ" HorizontalAlignment="Left" Height="25" Margin="10,120,0,0" VerticalAlignment="Top" Width="268" Background="#FFADEAE4" FontFamily="Times New Roman" FontSize="18" Click="Enter_Click"/>
         <Button x:Name="reister" Content="РЕГИСТРАЦИЯ" HorizontalAlignment="Left" Height="25" Margin="9,150,0,0" VerticalAlignment="Top" Width="268" Background="#FFADEAE4" FontFamily="Times New Roman" FontSize="18" Click="Reister_Click"/>
